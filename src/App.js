@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -20,6 +20,34 @@ function App() {
         </a>
       </header>
     </div>
+  );
+}
+
+export default App;*/
+
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import Navbar from "./components/navbar.component";
+import CandidateZone from "./components/candidateZone.component";
+import Home from "./components/home.component";
+import EmployerZone from "./components/employerZone.component";
+import PartnerZone from "./components/partnerZone.component";
+import Footer from "./components/footer.component";
+
+function App() {
+  return (
+    <Router>
+      <div className="container">
+        <Navbar />
+        <br />
+        <Route path="/" exact component={Home} />
+        <Route path="/employerZone" component={EmployerZone} />
+        <Route path="/partnerZone" component={PartnerZone} />
+        <Route path="/candidateZone" component={CandidateZone} />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
