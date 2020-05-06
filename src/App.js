@@ -26,6 +26,8 @@ function App() {
 export default App;*/
 
 import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Navbar from "./components/navbar.component";
@@ -34,6 +36,8 @@ import Home from "./components/home.component";
 import EmployerZone from "./components/employerZone.component";
 import PartnerZone from "./components/partnerZone.component";
 import Footer from "./components/footer.component";
+import ContactUs from "./components/contactUs.component";
+import AboutUs from "./components/aboutUs.component";
 
 function App() {
   return (
@@ -42,9 +46,11 @@ function App() {
         <Navbar />
         <br />
         <Route path="/" exact component={Home} />
+        <Route path="/aboutUs" component={AboutUs} />
         <Route path="/employerZone" component={EmployerZone} />
         <Route path="/partnerZone" component={PartnerZone} />
         <Route path="/candidateZone" component={CandidateZone} />
+        <Route path="/contactUs" component={ContactUs} />
         <Footer />
       </div>
     </Router>

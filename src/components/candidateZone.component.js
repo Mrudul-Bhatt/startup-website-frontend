@@ -23,32 +23,16 @@ export default class CandidateZone extends Component {
     this.state = {
       name: "",
       email: "",
-      contact: null,
+      contact: "",
       fatherName: "",
       education: "",
-      panNumber: null,
-      aadharNumber: null,
+      panNumber: "",
+      aadharNumber: "",
       location: "",
-      lastSalary: null,
+      lastSalary: "",
       lastCompany: "",
     };
   }
-
-  /*componentDidMount() {
-    axios
-      .get("https://localhost:5000/users/")
-      .then((response) => {
-        if (response.data.length > 0) {
-          this.setState({
-            users: response.data.map((user) => user.username),
-            username: response.data[0].username,
-          });
-        }
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }*/
 
   onChangeName(e) {
     this.setState({
@@ -126,7 +110,7 @@ export default class CandidateZone extends Component {
   render() {
     return (
       <div>
-        <h3>Fill Condidate Zone Log</h3>
+        <h3>Condidate Zone Log</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
             <label>Name: </label>
