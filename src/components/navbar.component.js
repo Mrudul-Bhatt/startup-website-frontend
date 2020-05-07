@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import logo from "./images/logo.png";
+import "./navbar.css";
 
-export default class Navbar extends Component {
+/*export default class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
@@ -40,18 +42,39 @@ export default class Navbar extends Component {
       </nav>
     );
   }
-}
+}*/
 
-/*const Navbar = () => {
-  return (
-    <nav className="nav-wrapper grey darken-3">
-      <div className="container">
-        <Link to="/" className="brand-logo">
-          MarioPlan
-        </Link>
-        <SignedInLinks />
-        <SignedOutLinks />
-      </div>
-    </nav>
-  );
-};*/
+export default class Navbar extends Component {
+  render() {
+    return (
+      <nav>
+        <div className="nav-wrapper">
+          {/*<Link to="/" className="brand-logo">
+            IntensePlacements
+          </Link>*/}
+          <img className="fit" src={logo} alt="company logo" />
+          <Link to="/" className="brand-logo">
+            Intense Placement Pvt. Ltd.
+          </Link>
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <li>
+              <Link to="/aboutUs">About Us</Link>
+            </li>
+            <li>
+              <Link to="/employerZone">Employers Zone</Link>
+            </li>
+            <li>
+              <Link to="/partnerZone">Partners Zone</Link>
+            </li>
+            <li>
+              <Link to="/candidateZone">Candidate Zone</Link>
+            </li>
+            <li>
+              <Link to="/contactUs">Contact Us</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    );
+  }
+}

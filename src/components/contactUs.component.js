@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import axios from "axios";
 //import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import "./contactus.css";
 
 export default class ContactUs extends Component {
+  x;
   constructor(props) {
     super(props);
 
@@ -64,7 +66,7 @@ export default class ContactUs extends Component {
     return (
       <div>
         <h3>Contact Us</h3>
-        <form onSubmit={this.onSubmit}>
+        <form className="width1" onSubmit={this.onSubmit}>
           <div className="form-group">
             <label>Name: </label>
             <input
@@ -98,6 +100,7 @@ export default class ContactUs extends Component {
           <div className="form-group">
             <label>Message: </label>
             <textarea
+              rows="5"
               required
               className="form-control"
               value={this.state.message}
