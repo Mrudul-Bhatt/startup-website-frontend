@@ -45,7 +45,8 @@ function App() {
       <div className="container">
         <Navbar />
         <br />
-        <Route path="/" exact component={CandidateZone} />
+        {/*<Route path="/" exact component={CandidateZone} /> uncomment this if you want candidate zone on home page */}
+        <Route path="/" exact component={Home} />
         <Route path="/aboutUs" component={AboutUs} />
         <Route path="/employerZone" component={EmployerZone} />
         <Route path="/partnerZone" component={PartnerZone} />
