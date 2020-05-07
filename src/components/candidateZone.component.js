@@ -103,7 +103,10 @@ export default class CandidateZone extends Component {
     };
 
     axios
-      .post("http://localhost:5000/candidateZone/add", candidateForm)
+      .post(
+        "https://git.heroku.com/web-startup-api.git/candidateZone/add",
+        candidateForm
+      )
       .then(() => (window.location = "/"));
   }
 

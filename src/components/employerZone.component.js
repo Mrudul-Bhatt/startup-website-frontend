@@ -71,7 +71,10 @@ export default class EmployerZone extends Component {
     };
 
     axios
-      .post("http://localhost:5000/employerZone/add", employerForm)
+      .post(
+        "https://git.heroku.com/web-startup-api.git/employerZone/add",
+        employerForm
+      )
       .then(() => (window.location = "/"));
   }
 

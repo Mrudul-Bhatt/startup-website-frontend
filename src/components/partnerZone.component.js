@@ -80,7 +80,10 @@ export default class PartnerZone extends Component {
     };
 
     axios
-      .post("http://localhost:5000/partnerZone/add", partnerForm)
+      .post(
+        "https://git.heroku.com/web-startup-api.git/partnerZone/add",
+        partnerForm
+      )
       .then(() => (window.location = "/"));
   }
 
