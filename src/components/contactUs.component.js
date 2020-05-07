@@ -59,7 +59,7 @@ export default class ContactUs extends Component {
 
     axios
       .post(
-        "https://git.heroku.com/web-startup-api.git/contactUs/add",
+        "https://web-startup-api.herokuapp.com/contactUs/add",
         contactUsForm
       )
       .then(() => (window.location = "/"));
