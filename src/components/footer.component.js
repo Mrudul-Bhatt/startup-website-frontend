@@ -85,16 +85,11 @@ import React, { Component } from "react";
 export default class Footer extends Component {
   render() {
     return (
-      <div>
-        <footer class="page-footer">
+      <div style={{ backgroundColor: "blue" }}>
+        <footer style={{ backgroundColor: "blue" }} class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                {/*<h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">
-                  You can use rows and columns here to organize your footer
-                  content.
-    </p>*/}
                 <p>
                   OFFICE ADDRESS <br /> H-55/A , Shiv Ram Park , Nangloi , New
                   Delhi-41
@@ -112,22 +107,70 @@ export default class Footer extends Component {
                 <h5 class="white-text">Connect To Us</h5>
                 <ul>
                   <li>
-                    <a href="https://www.linkedin.com/company/intense-placement-private-limited">
+                    <a
+                      style={{
+                        textDecoration: "none",
+                        color: "white",
+                      }}
+                      href="https://www.linkedin.com/company/intense-placement-private-limited"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/color/48/000000/linkedin.png"
+                        alt=""
+                      />
                       LinkedIn
                     </a>
                   </li>
                   <li>
-                    <a class="grey-text text-lighten-3" href="#!">
+                    <a
+                      style={{
+                        textDecoration: "none",
+                        color: "white",
+                      }}
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/color/48/000000/instagram-new.png"
+                        alt=""
+                      />
                       Instagram
                     </a>
                   </li>
                   <li>
-                    <a class="grey-text text-lighten-3" href="#!">
+                    <a
+                      style={{
+                        textDecoration: "none",
+                        color: "white",
+                      }}
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/color/48/000000/facebook-new.png"
+                        alt=""
+                      />
                       Facebook
                     </a>
                   </li>
                   <li>
-                    <a class="grey-text text-lighten-3" href="#!">
+                    <a
+                      style={{
+                        textDecoration: "none",
+                        color: "white",
+                      }}
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.icons8.com/color/48/000000/twitter-circled.png"
+                        alt=""
+                      />
                       Twitter
                     </a>
                   </li>
